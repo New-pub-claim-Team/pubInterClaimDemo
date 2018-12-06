@@ -37,7 +37,7 @@
 		</style>
 	</head>
 
-	<body>
+	<body style=" background: #E3E3E3">
 		<div id="west" class="side">
 			<div class="sidetop" align="center">财产查勘处理</div>
 			<div class="sideRegistNo" align="center">RDAA201832010000010523</div>
@@ -45,8 +45,12 @@
 				<input name="Fruit" type="checkbox" value="" /> 财产查勘信息
 			</div>
 		</div>
-		<div class="centerdiv">
-			<div class="centertop">asd asd asd </div>
+		<div class="centerdiv" style="background: white;">
+			<div class="centertop">
+				<button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">按钮</button>
+				<button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">按钮</button>
+				<button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">按钮</button>
+			</div>
 			<div class="clearall">
 				<svg class="icon" aria-hidden="true">
 					<use xlink:href="#icon-qc-copy"></use>
@@ -161,7 +165,7 @@
 								</div>
 								<div class='input-group date' style="width: 59%;" id='datetimepicker2'>
 									<input type='text' class="form-control" />
-									<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+									<span class="input-group-addon"><span class="glyphicon glyphicon-calendar" style="color: royalblue;"></span></span>
 								</div>
 							</div>
 						</div>
@@ -174,14 +178,122 @@
 									<label class="typeface control-label pull-left">联系电话:</label>
 								</div>
 								<div class="col-md-10" style="padding: 0px 0px;">
-									<textarea class="col-md-12" style="padding: 0px 0px;width: 105%;border-radius: 4px;resize:none;" rows="3"></textarea>
+									<textarea placeholder="    请输入内容" class="col-md-12" style="padding: 0px 0px;width: 105%;border-radius: 4px;resize:none;"
+									 rows="3"></textarea>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+
+					<div class="clearfix" style="margin-top: 20px;">
+						<div class="col-md-12">
+							<div class="input-group col-md-12">
+								<div class="col-md-1" style="margin-left: 63px; padding: 0px 0px;width: 4.2%;color: royalblue;">
+									<label class="typeface control-label pull-left">备注:</label>
+								</div>
+								<div class="col-md-10" style="padding: 0px 0px;">
+									<textarea placeholder="    请输入内容" class="col-md-12" style="padding: 0px 0px;width: 105%;border-radius: 4px;resize:none;"
+									 rows="3"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="clearfix" align="center">
+						<table class="table"  style="width: 80%;margin-left: 68px;">
+							<thead align="right">
+								<tr>
+									<th >序号</th>
+									<th>损失财产名称</th>
+									<th>损失金额</th>
+									<th>损失程度</th>
+									<th>损失种类</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td><select id="selector" class="form-control" style="width: 114px;">
+									<option value="1">树</option>
+									<option value="2">人</option>
+								</select></td>
+									<td><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></td>
+									<td><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></td>
+									<td><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></td>
+									<td><button type="button" class="mui-btn mui-btn-blue btn-claim" style="background-color: #737374;">新增</button>
+								<button type="button" class="mui-btn mui-btn-blue btn-claim" style="background-color: #737374;">修改</button>
+								<button type="button" class="mui-btn mui-btn-blue btn-danger btn-claim">删除</button></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td><select id="selector" class="form-control" style="width: 114px;">
+									<option value="1">树</option>
+									<option value="2">人</option>
+								</select></td>
+									<td><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></td>
+									<td><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></td>
+									<td><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></td>
+									<td><button type="button" class="mui-btn mui-btn-blue btn-claim" style="background-color: #737374;">新增</button>
+								<button type="button" class="mui-btn mui-btn-blue btn-claim" style="background-color: #737374;">修改</button>
+								<button type="button" class="mui-btn mui-btn-blue btn-danger btn-claim">删除</button></td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+
+
+				<!-- <div class="clearfix">
+					<div class="pubclaimlist">
+						<ul class="list-inline" style="padding-bottom: 10px; ">
+							<li class="firstli">序号</li>
+							<li class="firstli">损失财产名称</li>
+							<li class="firstli">损失金额</li>
+							<li class="firstli">损失程度</li>
+							<li class="firstli">损失种类</li>
+							<li class="firstli">操作</li>
+						</ul>
+						<ul class="list-inline ">
+							<li class="nextli">1</li>
+							<li class="nextli">
+								<select id="selector" class="form-control" style="width: 114px;">
+									<option value="1">树</option>
+									<option value="2">人</option>
+								</select>
+							</li>
+							<li class="nextli"><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></li>
+							<li class="nextli"><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></li>
+							<li class="nextli"><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></li>
+							<li class="btn-group-lg nextli">
+								<button type="button" class="mui-btn mui-btn-blue btn-claim" style="background-color: #737374;">新增</button>
+								<button type="button" class="mui-btn mui-btn-blue btn-claim" style="background-color: #737374;">修改</button>
+								<button type="button" class="mui-btn mui-btn-blue btn-danger btn-claim">删除</button>
+							</li>
+						</ul>
+						<ul class="list-inline ">
+							<li class="nextli">2</li>
+							<li class="nextli">
+								<select id="selector" class="form-control" style="width: 114px;">
+									<option value="1">人</option>
+									<option value="2">树</option>
+								</select>
+							</li>
+							<li class="nextli"><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></li>
+							<li class="nextli"><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></li>
+							<li class="nextli"><input class="form-control" style="width: 114px;" type="text" name="" id="" value="" /></li>
+							<li class="btn-group-lg nextli">
+								<button type="button" class="mui-btn mui-btn-blue btn-claim" style="background-color: #737374;">新增</button>
+								<button type="button" class="mui-btn mui-btn-blue btn-claim" style="background-color: #737374;">修改</button>
+								<button type="button" class="mui-btn mui-btn-blue btn-danger btn-claim">删除</button>
+							</li>
+						</ul>
+					</div>
+				</div> -->
 			</div>
 		</div>
+		</div>
 	</body>
-
 </html>

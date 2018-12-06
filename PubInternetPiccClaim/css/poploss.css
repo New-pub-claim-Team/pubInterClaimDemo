@@ -292,3 +292,37 @@ li {
 	color: #000000;
 	text-shadow: 0.2px 0.1px;
 }
+
+.pubclaimlist{
+	margin-top: 20px;
+	margin-left: 80px;
+}
+
+.pubclaimlist ul{
+	border-bottom: solid 1px #e6e6e6;
+}
+
+.pubclaimlist ul li{
+	margin-right: 
+}
+
+.btn-claim{
+	border-radius: 4px;
+	width: 60px;
+	height: auto;
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #ffffff;
+}  
+
+.firstli{
+	margin-right: 106px;
+}
+
+.nextli{
+	margin-right: 45px;
+}
